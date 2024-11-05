@@ -1,0 +1,363 @@
+.services {
+  position: relative;
+  width: 100%;
+}
+
+.servicesImageContainer {
+  position: relative;
+  width: 1500px;
+  height: 150px;
+}
+
+.servicesImage {
+  width: 1400px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.serviceOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchContainer {
+  display: flex;
+  gap: 10px;
+}
+
+.inputGroup {
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 5px;
+  padding: 5px; /* Reduced padding for smaller height */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: add a shadow for better visibility */
+}
+
+.inputField {
+  border: none;
+  outline: none;
+  padding: 5px 8px; /* Adjusted padding for smaller height */
+  font-size: 0.9em; /* Reduced font size for a smaller input */
+}
+
+.icon {
+  margin: 0 5px; /* Adjust the margin as needed */
+  color: gray; /* Adjust the color as needed */
+  font-size: 1em; /* Adjust the icon size if needed */
+}
+
+.servicesLayout {
+  display: flex;
+  gap: 20px;
+  padding: 0 20px 0 40px; /* Top, Right, Bottom, Left */
+}
+
+.servicesProvided {
+  flex: 1;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.servicesHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.seeAll {
+  color: blue;
+  cursor: pointer;
+}
+
+.serviceBoxes {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.serviceBox {
+  background: white;
+  border-radius: 10px; /* Rounded corners */
+  padding: 5px; /* Reduced padding */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  min-width: 120px;
+  max-width: 150px;
+  text-align: center; /* Center text inside boxes */
+  height: 120px; /* Reduced height for service boxes */
+}
+
+.serviceText {
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.serviceImageSmall {
+  width: 70%;
+  height: auto;
+}
+
+.serviceBoxLink {
+  text-decoration: none;
+  color: inherit;
+}
+
+.topRatingServices {
+  padding: 0 20px 0 40px; /* Top, Right, Bottom, Left */
+  margin: 40px 20px;
+}
+
+.topRatingServices h3 {
+  margin-bottom: 20px;
+}
+
+.topRatingImages {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  position: relative;
+}
+
+.topRatingImage {
+  position: relative;
+  width: calc(20% - 10px);
+  height: 300px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.serviceTopRatingImage {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.topRatingImage:hover .serviceTopRatingImage {
+  transform: scale(1.1);
+}
+
+.topRatingOverlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.topRatingImage:hover .topRatingOverlay {
+  opacity: 1;
+}
+
+.topRatingText {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.ratingReviews {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+}
+
+.starIcon {
+  color: yellow;
+  margin-left: 5px;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 5px;
+}
+
+.rupeeIcon {
+  color: #fff;
+}
+
+.gap {
+  height: 20px; /* Adjust the gap as needed */
+}
+
+.professionalMakeup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: lightblue;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+  max-width: 1200px; /* Reduce the width of the rectangle */
+  margin-left: auto;
+  margin-right: auto;
+  height: 250px;
+}
+
+.makeupText {
+  flex: 1;
+}
+
+.makeupTitle {
+  color: blue;
+  margin: 0;
+}
+
+.makeupSubtitle {
+  margin: 10px 0;
+}
+
+.bookNowButton {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: blue;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.bookNowButton:hover {
+  background-color: darkblue;
+}
+
+.makeupImage {
+  flex: 1;
+  max-width: 350px;
+  margin-left: 20px;
+  border-radius: 8px;
+}
+.personalBeautyDestination {
+  margin-top: 20px;
+  padding: 0 20px 0 40px;
+  background-color: rgb(243, 243, 243);
+}
+.seeAllContainer {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+
+.seeAllContainer {
+  cursor: pointer;
+  color: #007bff;
+  text-decoration: underline;
+}
+.personalBeautyDestination h3 {
+  margin-bottom: 0px;}
+
+.personalBeautyImages {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 0px;
+}
+
+.personalBeautyImage {
+  position: relative;
+  width: 18%;
+  overflow: hidden;
+}
+
+.personalBeautyImage img {
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.personalBeautyImage:hover img {
+  transform: scale(1.05);
+}
+
+.hoverInfo {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  color: white;
+  padding: 10px;
+  width: 100%; /* Full width */
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s ease; /* Smooth transition for visibility */
+}
+
+.personalBeautyImage:hover .hoverInfo {
+  opacity: 1; /* Make visible on hover */
+}
+
+.ratingReviews {
+  display: flex;
+  align-items: center; /* Align items vertically */
+}
+
+.starIcon {
+  color: gold; /* Star icon color */
+  margin: 0 5px; /* Space between star and rating */
+}
+
+.price {
+  display: flex;
+  align-items: center; /* Align items vertically */
+}
+.changeIcon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.changeIcon {
+  color: #fff;
+  font-size: 24px;
+}
+.homeAppliance {
+  margin-top: 20px;
+  padding: 0 20px 0 40px;
+  background-color: aliceblue;
+}
+.homeAppliance h3 {
+  margin-bottom: 0px;}
+
+.homeCleaning {
+    margin-top: 20px;
+    padding: 0 20px 0 40px;
+    background-color: aliceblue;
+}
+.homeCleaning h3 {
+    margin-bottom: 0px;
+}
+.professionalSolution {
+  margin-top: 20px;
+  padding: 0 20px 0 40px;
+  background-color: beige;
+}
+.professionalSolution h3 {
+  margin-bottom: 0px;
+}
+.footer{
+  background-color: black;
+}

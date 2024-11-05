@@ -1,0 +1,194 @@
+.clothSewing{
+    background-color: #ccc;
+}
+.clothSewingImageContainer {
+    position: relative;
+    width: 1500px;
+    height: 200px;
+  }
+  
+  .clothSewingTopImage {
+    width: 1500px;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .searchOverlay {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .locationInputContainer {
+    display: flex;
+    align-items: center;
+    position: relative; /* Added for positioning the icon */
+  }
+  
+  .locationInput {
+    width: 100%;
+    padding-left: 30px; /* Space for the icon */
+  }
+  
+  .locationIcon {
+    position: absolute;
+    left: 10px; /* Adjust to position the icon inside the input */
+    color: #888; /* Optional: Change the icon color */
+  }
+  
+  .searchInputContainer {
+    display: flex;
+    align-items: center;
+  }
+  
+  .inputWithIcons {
+    position: relative; /* For positioning the icons */
+    width: 100%;
+  }
+  
+  .searchInput {
+    width: 100%;
+    padding-left: 40px; /* Space for the left icon */
+    padding-right: 30px; /* Space for the right icon */
+  }
+  
+  .microphoneIcon {
+    position: absolute;
+    left: 10px; /* Adjust to position the icon inside the input */
+    cursor: pointer;
+    color: #888; /* Optional: Change the icon color */
+  }
+  
+  .searchIcon {
+    position: absolute;
+    right: 10px; /* Adjust to position the icon inside the input */
+    cursor: pointer;
+    color: #888; /* Optional: Change the icon color */
+  }
+  
+  
+  .laundryAndDryClean {
+    margin: 20px;
+    padding: 20px;
+  }
+  
+  .laundrySidebarAndMainContent {
+    display: flex;
+  }
+  
+  .sidebar {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .serviceItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  
+  .mainContent {
+    flex-grow: 1;
+    padding-left: 20px;
+  }
+  .laundryServiceBoxes {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.laundryServiceBox {
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #fffcfc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    background-color: white;
+}
+.serviceImage{
+    height: 200px;
+    width: 190px;
+}
+.serviceDetails {
+    margin-left: 10px;
+  }
+  
+  .verifiedIcon {
+    color: green;
+  }
+  
+  .rating, .address {
+    font-size: 0.9rem;
+    margin-top: 5px;
+  }
+  
+  .actionButtons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .connectButton, .bookButton {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  
+  .connectButton {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .bookButton {
+    background-color: #2196F3;
+    color: white;
+  }
+  .laundrySection {
+    margin-top: 20px; /* Space above the section */
+  }
+  
+  .laundryDryServices {
+    display: flex; /* To place boxes side by side */
+    gap: 20px; /* Space between boxes */
+  }
+  
+  .laundryServiceBox {
+    display: flex; /* Align image and text */
+    width: 100%; /* Full width */
+    border: 1px solid #ccc; /* Optional border */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Round edges */
+  }
+  
+  .serviceImage {
+    width: 100px; /* Fixed width for image */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .serviceDetails {
+    padding: 10px; /* Space inside the box */
+    flex: 1; /* Take the rest of the space */
+  }
+  
+  .actionButtons {
+    display: flex;
+    gap: 10px; /* Space between buttons */
+  }
+  
+  

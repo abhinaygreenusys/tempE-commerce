@@ -1,0 +1,309 @@
+.flight-book-now-container {
+    padding: 20px;
+  }
+  
+  .flight-details {
+    border-radius: 5px;
+    padding: 10px;
+    background-color: orange;
+  }
+  
+  .flight-detail-row {
+    margin-bottom: 10px;
+  }
+  
+  .flight-journey-details, .flight-irctc-details {
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+  }
+  
+  .flight-journey-row, .flight-journey-title, .flight-journey-info {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .flight-left, .flight-right {
+    width: 45%;
+  }
+  
+  .flight-irctc-title {
+    font-weight: bold;
+  }
+  
+  .flight-irctc-info {
+    margin-top: 10px;
+  }
+  
+  .flight-irctc-input {
+    margin-right: 10px;
+    width: 85%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+  }
+  
+  .flight-validate-save-btn {
+    padding: 5px 10px;
+  }
+  
+  .flight-create-irctc-id {
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  .flight-passenger-details {
+    border-radius: 5px;
+    padding: 15px;
+    margin-top: 10px;
+  }
+  .flight-passenger-details {
+    background-color: #f0f0f0;
+  }
+  .flight-passenger-title, .flight-passenger-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .flight-passenger-title .left {
+    width: 45%;
+  }
+  .flight-passenger-title {
+    font-weight: bold;
+    font-size: 1.1em;
+  }
+  .flight-full-name-input, .flight-age-input, .flight-nationality-input, .flight-berth-preference {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+  }
+  .flight-validate-save-btn, .flight-add-passenger-btn, .flight-save-btn, .cancel-btn, .flight-edit-passenger-btn {
+    padding: 8px 12px;
+    margin-top: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .flight-validate-save-btn:hover, .flight-add-passenger-btn:hover, .flight-save-btn:hover, .flight-cancel-btn:hover, .edit-passenger-btn:hover {
+    background-color: #0056b3;
+  }
+  .flight-add-more-passenger {
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .flight-passenger-title {
+    justify-content: space-between;
+  }
+  
+  .flight-add-passenger-btn {
+    background-color: #28a745;
+  }
+  
+  .flight-add-passenger-btn:hover {
+    background-color: #218838;
+  }
+  
+  .flight-passenger-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 4px;
+  }
+  
+  .flight-edit-passenger-btn {
+    background-color: #ffc107;
+  }
+  
+  .flight-edit-passenger-btn:hover {
+    background-color: #e0a800;
+  }
+  
+  .flight-add-more-passenger {
+    margin-top: 15px;
+  }
+  
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background: #fff;
+    padding: 20px 30px;
+    border-radius: 8px;
+    width: 500px;
+    max-width: 90%;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  }
+  
+  .modal-content h2 {
+    margin-top: 0;
+  }
+  
+  .modal-body {
+    margin-top: 15px;
+  }
+  
+  .input-group {
+    margin-bottom: 15px;
+  }
+  
+  .input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .gender-options label {
+    margin-right: 15px;
+  }
+  
+  .modal-footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+  
+  .save-btn {
+    background-color: #28a745;
+  }
+  
+  .save-btn:hover {
+    background-color: #218838;
+  }
+  
+  .cancel-btn {
+    background-color: #dc3545;
+  }
+  
+  .cancel-btn:hover {
+    background-color: #c82333;
+  }
+  .flight-booking-details, .flight-additional-preferences, .flight-base-fare, .flight-proceed-payment {
+    border-radius: 5px;
+    padding: 15px;
+    margin-top: 10px;
+  }
+  .flight-booking-details, .flight-additional-preferences, .flight-base-fare, .flight-proceed-payment {
+    background-color: #f0f0f0;
+  }
+  .flight-contact-input, .flight-email-input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+  }
+  .flight-fare-title, .flight-fare-amount {
+    width: 45%;
+  }
+  .flight-fare-title {
+    font-weight: bold;
+    font-size: 1.1em;
+  }
+  .flight-booking-details {
+    background-color: #f0f0f0;
+  }
+  .flight-booking-title {
+    font-weight: bold;
+    font-size: 1.1em;
+  }
+  .flight-booking-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .flight-contact-input, .flight-email-input {
+    width: 48%;
+  }
+  
+  .flight-additional-preferences {
+    background-color: #f0f0f0;
+  }
+  
+  .flight-preferences-title {
+    font-weight: bold;
+    font-size: 1.1em;
+  }
+  
+  .flight-preferences-options {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  
+  .flight-preference-option {
+    margin-bottom: 10px;
+  }
+  
+  .flight-base-fare {
+    background-color: #f0f0f0;
+  }
+  
+  .fare-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .fare-title {
+    font-weight: bold;
+  }
+  
+  .flight-fare-amount {
+    font-weight: bold;
+  }
+  
+  .flight-proceed-payment {
+    background-color: #f0f0f0;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 5px;
+  }
+  
+  .flight-proceed-btn {
+    width: 100%;
+    background-color: #28a745;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+  }
+  
+  .flight-terms-text {
+    margin-top: 10px;
+    font-size: 0.9em;
+  }
+  
+  .flight-terms-link {
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  .flight-contact-input, .flight-email-input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+  }

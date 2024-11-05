@@ -1,0 +1,111 @@
+.dashoboadHeader {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.dashoboadHeader-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.dashoboadHeader-left {
+  display: flex;
+  align-items: center;
+}
+
+.dashoboadHeader-center {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.dashoboadHeader-right {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 40px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  padding: 5px;
+  font-size: 16px;
+}
+
+.icon-button {
+  background: none;
+  border: none;
+  font-size: 20px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.nav-text-elements {
+  display: flex;
+  align-items: center;
+}
+
+.nav-text-element {
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.nav-text-element span {
+  margin-left: 5px;
+}
+
+.cart-icon {
+  position: relative;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.cart-count {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+}
+
+.icon-text-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.icon-text-item.active {
+  background-color: blue;
+  color: white;
+}
+
+
+.icon-text-item .icon {
+  font-size: 20px;
+  margin-right: 5px;
+  color: white;
+}
+
+.dashoboadHeader-right .icon-text-item {
+  margin-left: 20px;
+}

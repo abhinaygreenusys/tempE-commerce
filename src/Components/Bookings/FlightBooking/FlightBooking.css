@@ -1,0 +1,464 @@
+
+.hotel-flight-booking-page {
+    max-width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background-color: rgb(231, 231, 231);
+}
+
+.promotion-section {
+    background-color: blue;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+.promotion-section p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.image-section {
+    position: relative;
+    text-align: center;
+}
+
+.main-image {
+    width: 100%;
+    height: auto;
+}
+
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 150px;
+    height: auto;
+}
+
+/* Options Box */
+.options-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    padding: 10px 20px;
+    background-color: rgb(240, 237, 237);
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(248, 247, 247, 0.911);
+    width: 40%;
+}
+
+.option {
+    padding: 10px 20px;
+    margin: 0 5px;
+    background-color: lightgray;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.option.active {
+    background-color: orange;
+    color: white;
+    border: 2px solid blue;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Flight Details Box */
+.flight-details-box {
+    position: absolute;
+    top: 80%; /* Adjust this value to move the box upward or downward */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1; /* Ensure it appears above other elements */
+}
+
+.trip-type {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    margin-bottom: 15px;
+    padding-left: 10px ;
+}
+
+.trip-type label {
+    font-size: 16px;
+    cursor: pointer;
+}
+.flight-options-container {
+    background-color: #f0f0f0; /* Light background color */
+    padding: 15px;
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow */
+    width: 100%; /* Full width of the parent container */
+}
+
+.flight-options-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.flight-option {
+    display: flex;
+    flex-direction: column;
+    width: 22%;
+}
+
+.flight-option label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.flight-option select,
+.flight-option input {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.popular-categories-section {
+    margin: 20px 0;
+    padding: 0 20px;
+  }
+  
+  .popular-title {
+    text-align: left;
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  .categories-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .category-box {
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 15%; /* Adjust the width to make the boxes smaller */
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .image-part {
+    flex: 1;
+  }
+  
+  .category-image {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .text-part {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .text-part p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .product-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .product-item {
+    text-align: center;
+    flex: 1;
+    margin: 0 10px;
+  }
+  
+  .product-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .product-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .product-info .price {
+    font-weight: bold;
+  }
+  
+  .product-item p {
+    margin-top: 10px;
+    color: #555;
+    font-size: 14px;
+  }
+
+  .product-section1 {
+    padding: 20px 0;
+  }
+  .product-header1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .product-header1 h2 {
+    /* margin: 30px; */
+    padding-left: 25px;
+  }
+  
+  .see-all-link1 {
+    text-decoration: none;
+    color: #3498db;
+    font-weight: bold;
+  }  
+  .background-image-section {
+    margin-top: 150px ;
+    position: relative;
+    height: 700px;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .overlay-image {
+    position: absolute;
+  }
+  
+  .subtract-image {
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1200px;
+    height: 250px;
+  }
+  .subtract-text {
+    position: absolute;
+    top: -5%;
+    left: 10%;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    z-index: 2;
+  }
+  
+  .baggs-image {
+    top: -20%;
+    left: 25%;
+    width: 250px;
+    height: 350px;
+  }
+  
+  .plane-image {
+    top: -1%;
+    left: 48%;
+    width: 60px;
+    height: 60px;
+  }
+  .plane-text {
+    position: absolute;
+    top: 8%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: .6rem;
+    text-align: center;
+  }
+  .rectangle2-image {
+    top: 10%;
+    right: 5%;
+    width: 150px;
+    height: auto;
+  }  
+  
+  .vector8-image {
+    top: -8%;
+    left: 20%;
+    width: 400px;
+    height: auto;
+  }
+  
+  .group29-image {
+    top: -5%;
+    right: 10%;
+    width: 180px;
+    height: auto;
+  }
+  .partner-airline-section {
+    position: absolute;
+    top: 250px;
+    left: 80px;
+    padding: 10px;
+  }
+  
+  .partner-airline-section h3 {
+    right: 40%;
+    margin-bottom: 10px;
+  }
+  
+  .partner-airline-section p {
+    font-size: 12px;
+  }
+  
+  .plane2-image {
+    position: absolute;
+    right: 400px;
+    bottom: 250px;
+    width: 300px;
+  }
+  
+  .background-image-bottom {
+    position: absolute;
+    bottom: 20px;
+    width: calc(100% - 40px);
+    left: 20px;
+  }
+  
+  .bottom-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .bottom-row img {
+    width: 7%;
+    margin: 5px;
+  }
+  .great-deals-section {
+    padding: 20px;
+  }
+  
+  .great-deals-section h2 {
+    text-align: left;
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  
+  .great-deals-section .see-all-link {
+    display: block;
+    text-align: right;
+    margin-bottom: 20px;
+  }
+  
+  .great-deals-section .destination-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .destination-item {
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+  }
+  
+  .destination-item img {
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  .why-resia-section {
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .why-resia-section h2 {
+    text-align: left;
+    margin-bottom: 30px;
+    font-size: 25px;
+    padding-left: 25px;
+  }
+  
+  .why-resia-row {
+    display: flex;
+    justify-content: space-between; /* Space between each box */
+    flex-wrap: wrap;
+    gap: 20px; /* Provides gap between the boxes */
+    padding: 0 20px; /* Add padding to ensure boxes don't touch screen edges */
+  }
+  
+  .why-resia-box {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px; /* Reduced padding to make boxes smaller */
+    text-align: left;
+    width: calc(25% - 20px); /* 25% width minus gap between boxes */
+    box-sizing: border-box;
+    display: flex; /* Flexbox to align items */
+    align-items: center; /* Vertically align content */
+    min-height: 120px; /* Ensures boxes have a consistent reduced height */
+  }
+  
+  .light-green {
+    background-color: #d0f2d9;
+  }
+  
+  .light-grey {
+    background-color: #f0f0f0;
+  }
+  
+  .light-pink {
+    background-color: #fce4ec;
+  }
+  
+  .why-resia-box img {
+    width: 50px;
+    height: 50px; /* Set consistent height for the image */
+    margin-right: 15px;
+  }
+  
+  .why-resia-info {
+    display: block;
+    margin-left: 0; /* Remove extra margin */
+  }
+  
+  .why-resia-info h3 {
+    margin: 0;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .why-resia-info p {
+    margin-top: 5px; /* Reduced margin to control text spacing */
+    font-size: 12px;
+  }
+  
+  /* Media Query for smaller screens */
+  @media (max-width: 768px) {
+    .why-resia-box {
+      width: 100%; /* Stacks boxes vertically on smaller screens */
+      margin-bottom: 20px;
+      min-height: auto; /* Remove fixed height on smaller screens */
+    }
+    .why-resia-info {
+      margin-left: 0; /* Resets margin on smaller screens for proper alignment */
+    }
+  }
+  
+  
+  
+  
+
+  

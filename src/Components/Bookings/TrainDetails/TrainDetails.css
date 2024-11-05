@@ -1,0 +1,312 @@
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.dashboard-body {
+  display: flex;
+  flex: 1;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+.dates-section {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.date-rectangle {
+  position: relative;
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+}
+
+.divider {
+  width: 1px;
+  height: 100%;
+  background-color: #ccc;
+  position: absolute;
+  right: -5px;
+  top: 0;
+}
+.train-details-section {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.train-detail-rectangle {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+}
+.train-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.train-name-number {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.train-name {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.train-number {
+  font-size: 1em;
+  color: #555;
+}
+
+.train-actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.view-route-button {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.view-route-button:hover {
+  background-color: #0056b3;
+}
+
+.train-days {
+  font-weight: bold;
+  color: #333;
+}
+.train-timing {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.train-timing div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.train-timing span {
+  margin: 2px 0;
+}
+
+.departure-time, .arrival-time {
+  font-weight: bold;
+}
+
+.journey-duration {
+  font-style: italic;
+  color: #555;
+}
+
+.train-price-section {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.price-option-rectangle {
+  flex: 1 1 200px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  background-color: #f5f5f5;
+}
+
+.price-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.class-name {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.ticket-price {
+  color: #007bff;
+  font-weight: bold;
+}
+
+.price-details {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.availability, .seats, .updated-time {
+  display: flex;
+  justify-content: space-between;
+}
+
+.availability-label, .seats-label {
+  font-weight: bold;
+}
+
+.availability-status {
+  color: #28a745; /* Green for Available */
+}
+
+.availability-status:contains('Sold Out') {
+  color: #dc3545; /* Red for Sold Out */
+}
+
+.seats-number {
+  color: #555;
+}
+@media (max-width: 768px) {
+  .train-timing {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .price-option-rectangle {
+    flex: 1 1 100%;
+  }
+}
+.availability-section {
+  margin-top: 20px;
+}
+
+.view-availability {
+  color: #007bff;
+  cursor: pointer;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.view-availability:hover {
+  text-decoration: underline;
+}
+
+.availability-content {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  margin-top: 10px;
+}
+
+.class-button-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.class-button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #e0e0e0;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.class-button.active {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.class-button:hover {
+  background-color: #0056b3;
+  color: #fff;
+}
+
+.availability-rows {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.availability-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.availability-row:hover {
+  background-color: #f1f1f1;
+}
+
+.row-day-date {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 20%;
+}
+
+.day {
+  font-weight: bold;
+}
+
+.date {
+  color: #555;
+}
+
+.row-availability,
+.row-probability,
+.row-price,
+.row-book-now {
+  width: 20%;
+  text-align: center;
+}
+
+.row-book-now {
+  color: #28a745;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.row-book-now:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .availability-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .row-day-date,
+  .row-availability,
+  .row-probability,
+  .row-price,
+  .row-book-now {
+    width: 100%;
+    text-align: left;
+  }
+
+  .row-book-now {
+    margin-top: 10px;
+  }
+}
+
+

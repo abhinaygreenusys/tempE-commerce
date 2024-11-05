@@ -1,0 +1,406 @@
+
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+}
+.laundry-page {
+    padding: 0;
+  }
+  
+  .laundry {
+    background-color: lightgray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .laundry-left {
+    flex: 1;
+    padding-left: 30px;
+  }
+  
+  .laundry-left h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .laundry-left p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    color: #555;
+  }
+  
+  .request-service-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .request-service-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .laundry-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .laundry-right img {
+    position: absolute;
+  }
+  
+  .bedsheet {
+    top: -130px;
+    right: 200px;
+    width: 350px;
+  }
+  
+  .bedsheet1 {
+    top: 20px;
+    right: 100px;
+    width: 220px;
+  }
+  
+  .girl {
+    bottom: -150px;
+    right: 0;
+    width: 300px;
+  }
+  
+  /* Rectangle Box with Images */
+  .rectangle-box {
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 50px auto;
+    width: 80%;
+    max-width: 1200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .image-row {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+  }
+  
+  .clickable-image {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .clickable-image:hover {
+    transform: scale(1.1);
+  }
+  /* New Section with Rectangle Images and Text */
+.service-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.service-left {
+    flex: 1;
+    position: relative;
+}
+
+.rectangle-images {
+    display: flex;
+    gap: 55px;
+}
+
+.rectangle11 {
+    width: 200px;
+    padding-left: 50px;
+}
+
+.rectangle12-wrapper {
+    position: relative;
+    width: 200px;
+    height: auto;
+    overflow: hidden; /* Ensure content does not overflow */
+    margin-top: 30px; /* Moves the section downward */
+}
+
+.rectangle12 {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio of the image */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+    border-radius: 50%; /* Makes the overlay's corners circular */
+    overflow: hidden; /* Ensures content is clipped to the border radius */
+}
+
+/* Service Text Section */
+.service-right {
+    flex: 1;
+    padding-left: 50px;
+}
+
+.service-right h2 {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.service-right p {
+    font-size: 14px;
+    margin-bottom: 5px; /* Reduce bottom margin for better spacing */
+}
+
+.service-details {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0px;
+}
+
+.service-icon {
+    width: 20px;
+    margin-right: 10px;
+}
+.image-section {
+    margin-top: 20px;
+    text-align: left;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.service-image {
+    max-width: 600px;
+    height: auto;
+    margin-left: 0;
+}
+.background-image-section {
+    background-size: cover;
+    background-position: center;
+    height: 300px; /* Adjust height as necessary */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Move content upwards */
+    align-items: center;
+    padding-top: 60px; /* Additional padding to move the content up */
+    position: relative;
+  }
+  
+  .service-overview-text {
+    color: white;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 60px; /* Reduce space between the text and the box */
+    font-weight: bold;
+  }
+  
+  .centered-box {
+    background-color: white;
+    border-radius: 20px; /* Circular corners */
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%; /* Increase the width of the rectangular box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow for better visibility */
+    margin-top: 20px; /* Adjust the margin to control space between the text and box */
+  }
+  
+  .image-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .square-image, .rect-image {
+    width: 250px; /* Adjust the size of the images */
+    height: 200px;
+    margin: 0 10px;
+  }
+  
+
+.square-box .circle-number {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: white;
+    color: black;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+.square-box {
+    position: relative;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    width: 250px; /* Adjust width as needed */
+    margin: 0 20px;
+    height: auto; /* Let the height adjust based on content */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column; /* Ensures the content flows vertically */
+    align-items: center; /* Center content horizontally */
+}
+
+.square-box .square-image1 {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px; /* Add space between the image and the title */
+}
+
+.square-box .square-image2 {
+    width: 50px;
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+.square-box .rect-text-title {
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.square-box .rect-text-description {
+    font-size: 0.8rem;
+    color: gray;
+    margin-top: 10px; /* Add space between the title and description */
+    text-align: center;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100%;
+  }
+  .request-service-section {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .request-box {
+    background-color: white;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 1200px;
+    max-width: 3000px;
+  }
+  
+  .request-box h2 {
+    font-size: 34px;
+    margin-bottom: 20px;
+  }
+  
+  .request-box p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555;
+  }
+  .request-service-btn {
+    background-color: blue; /* Blue background color */
+    color: white; /* White text */
+    padding: 10px 30px; /* Padding for the button */
+    border: none; /* Remove default borders */
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .request-service-btn:hover {
+    background-color: darkblue;
+  }
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+    position: relative;
+  }
+  
+  .modal-content h2 {
+    text-align: left;
+    margin-left: 0;
+  }
+  
+  .close-modal-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .services-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  .service-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+  }
+  
+  .service-icon {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+.circle-background {
+    background-color: skyblue;
+    border-radius: 50%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}  

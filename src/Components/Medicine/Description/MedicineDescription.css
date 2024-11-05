@@ -1,0 +1,451 @@
+.medicine1-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    background-color: lightgray;
+  }
+  
+  .medicine1-images {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-left: 80px;
+    margin-top: 20px;
+  }
+  
+  .medicine1-image {
+    width: 100px;
+    height: auto;
+    border: 1px solid #ddd;
+    padding: 5px;
+    background-color: white;
+  }
+  
+  .medicine1-info {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    flex-direction: row;
+  }
+  
+  .medicine1-box {
+    border: 1px solid #ddd;
+    padding: 20px; /* Increased padding to center content better */
+    background-color: white;
+    height: 400px;
+    width: 400px;
+    display: flex;
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    position: relative;
+    margin-top: 25px;
+  }
+  
+  .medicine1-box-image {
+    width: 300px; /* Increased size */
+    height: auto;
+  }
+  
+  .medicine1-description {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    gap: -25px;
+    margin-top: 25px;
+  }
+  .medicine1-description .bold-text{
+    font-weight: bold;
+    font-size: 22px;
+    white-space: nowrap;
+    /* overflow: hidden; */
+    text-overflow: ellipsis;
+  }
+  
+  .medicine1-rating {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .medicine1-rating span {
+    color: orange;
+    margin-right: 5px;
+  }
+  
+  .medicine1-price {
+    margin-top: 10px;
+  }
+  
+  .medicine1-discount {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .cancelled-price {
+    text-decoration: line-through;
+    margin-right: 5px;
+  }
+  
+  .productdiscount {
+    color: red;
+  }
+  
+  .medicine1-quantity {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .quantity-btn {
+    background-color: #ddd;
+    border: none;
+    font-size: 18px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .quantity-display {
+    font-size: 18px;
+  }
+  
+  .medicine1-size {
+    margin-top: 10px;
+  }
+  
+  .medicine1-sizes {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .size-box {
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    cursor: pointer;
+  }
+  .size-box.selected{
+    background-color: blue;
+  }
+  
+  .medicine1-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .add-to-cart-btn, .buy-now-btn {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .add-to-cart-btn {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .buy-now-btn {
+    background-color: #28a745;
+    color: white;
+  }
+  .medicine1-extra-actions {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .heart-btn {
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .heart-btn.checked {
+    color: red;
+  }
+  
+  .wishlist-text {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  .divider {
+    margin: 0 10px;
+  }
+  
+  .share-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    color: blue;
+  }
+  .divider-line {
+    margin-top: 20px;
+    border: none;
+    border-top: 1px solid #030303;
+    width: 100vw; /* Full viewport width */
+    position: relative;
+    left: 50%;
+    margin-left: calc(-50% + 10px); /* Adjust to extend beyond container */
+  }
+  .medicine1-extra-info p {
+    margin: 5px 0;
+    font-weight: normal;
+  }
+  
+  .emi-criteria {
+    display: flex;
+    align-items: center;
+    color: black; /* Set to desired color */
+    white-space: nowrap; /* Prevent text from wrapping */
+  }
+  
+  .emi-criteria .emi-dropdown-btn {
+    cursor: pointer;
+    margin-left: 5px; /* Reduce the gap */
+    font-size: 1rem;
+    color: black; /* Set to desired color */
+  }
+  
+  .emi-options {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+  }
+  
+  .emi-options ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .emi-options li {
+    margin: 5px 0;
+    color: blue; /* Blue color for EMI options */
+  }
+  .medicine1-special-offers {
+    margin-top: 20px;
+  }
+  
+  .special-offer-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .offer-circle {
+    width: 15px;
+    height: 15px;
+    background-color:blue;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+  }
+  
+  .special-offers-text {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .offer-box {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 10px;
+    width: 600px;
+  }
+  
+  .offer-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .offer-description {
+    margin-bottom: 10px;
+  }
+  
+  .offer-divider {
+    border: 0.5px solid #ddd;
+    margin: 15px 0;
+  }
+  .medicine1-about-product {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .medicine1-about-product h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .medicine1-about-product p {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .medicine1-about-product h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  .medicine1-about-product ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  .medicine1-about-product li {
+    font-size: 1em;
+    margin-bottom: 10px;
+  }
+  .medicine1-review-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .medicine1-left {
+    width: 60%;
+    margin-right: 20px;
+  }
+  
+  .medicine1-right {
+    width: 35%;
+  }
+  
+  .medicine1-review-box {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+  
+  .review-title {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .write-review-btn,
+  .latest-review-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    justify-items: flex-end;
+  }
+  
+  .write-review-btn:hover,
+  .latest-review-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .review-text {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .review-input textarea,
+  .reply-input textarea,
+  .customer-qa textarea {
+    width: 100%;
+    height: 60px;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .submit-review-btn,
+  .submit-reply-btn,
+  .submit-question-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .submit-review-btn:hover,
+  .submit-reply-btn:hover,
+  .submit-question-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .review-item {
+    margin-bottom: 10px;
+  }
+  
+  .review-author {
+    font-weight: bold;
+  }
+  
+  .review-content {
+    margin: 5px 0;
+  }
+  
+  .review-actions {
+    display: flex;
+    align-items: center;
+  }
+  
+  .reply-btn,
+  .like-btn {
+    background: none;
+    border: none;
+    color: #007bff;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  .reply-btn:hover,
+  .like-btn:hover {
+    text-decoration: underline;
+  }
+  
+  .reply-text {
+    margin-right: 5px;
+  }
+  
+  .like-count {
+    margin-left: 5px;
+  }
+  
+  .review-divider {
+    margin: 10px 0;
+  }
+  
+  .customer-qa {
+    margin-top: 20px;
+  }
+  
+  .customer-qa textarea {
+    margin-bottom: 10px;
+  }
+  
+  .medicine1-review-box .button-container {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+  

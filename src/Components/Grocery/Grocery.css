@@ -1,0 +1,229 @@
+.grocery{
+  background-color: #f5f5f5;
+}
+.image-section {
+  width: 100vw;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.centered-text1{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem; /* Adjust size as needed */
+  color: white; /* Adjust color if necessary */
+  text-align: center;
+  font-weight: bold; /* Optional: Makes the text bold */
+  z-index: 2; /* Ensure text appears above the image */
+}
+
+.featured-image {
+  width: 100%; /* Full width of the parent container */
+  height: 250px; /* Maintain aspect ratio */
+  border-radius: 8px; /* Optional, for rounded corners */
+}
+
+.category-section1 {
+  text-align: left;
+}
+
+.category-section1 h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.row1 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.category-item {
+  background-color: white; /* White background for each box */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  flex: 1;
+  margin: 0 10px;
+  transition: transform 0.2s ease;
+}
+
+.category-item img {
+  max-width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.category-item p {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.category-item:hover {
+  transform: translateY(-5px); /* Subtle lift effect on hover */
+}
+
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .category-item {
+    margin-bottom: 20px;
+  }
+}
+
+.best-offer-section {
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.offer-text {
+  margin-bottom: 20px;
+}
+
+.offer-background-image {
+  /* background-image: url('path-to-your-image.jpg'); */
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 300px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px;
+}
+
+.offer-content {
+  color: white;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.offer-discount {
+  margin-top: 10px;
+  background-color: red;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+}
+
+/* Existing styles for grocery and offer sections */
+
+.new-section {
+  display: flex;
+  margin-top: 30px;
+}
+
+.new-section-left {
+  width: 50%;
+  padding-right: 20px;
+}
+
+.new-box {
+  background-color: skyblue;
+  border-radius: 15px;
+  position: relative;
+  padding: 20px;
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.new-box-content {
+  max-width: 60%;
+}
+
+.new-box h4 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.discount-text {
+  color: red;
+  margin: 10px 0;
+}
+
+.shop-now-button {
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.new-box-image {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 80px;
+}
+
+.new-section-right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.new-row {
+  background-color: rgb(226, 250, 242);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.new-row1 {
+  background-color: rgb(250, 211, 153);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.new-row-content {
+  max-width: 60%;
+}
+
+/* CSS for Grocery Component */
+
+/* Increase image size for Colgate in the .new-box */
+.new-box-image {
+  width: 320px; /* Increase width */
+  height: 400px; /* Increase height */
+  bottom: 10px; 
+  right: 10px;
+}
+
+/* Increase image size for Himalaya in .new-row */
+.new-row-image {
+  width: 100px; /* Increase width */
+  height: 100px; /* Increase height */
+}
+
+/* Additional image class for the .new-row1 (if needed) */
+.new-row1-image {
+  width: 100px; /* Increase width */
+  height: 100px;
+}
+
+/* If you need a specific class for Fruitdry */
+.fruitdry-image {
+  width: 120px; /* Increase width */
+  height: 120px; /* Increase height */
+}
+
+
+

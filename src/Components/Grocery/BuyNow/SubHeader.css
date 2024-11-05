@@ -1,0 +1,17 @@
+.buy-now-circles {
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+    margin-bottom: 20px;
+    padding-left: 25px;
+  }
+  
+  .circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }

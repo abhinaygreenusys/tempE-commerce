@@ -1,0 +1,249 @@
+.luxury-escape-section,
+.discover-dream-holiday-section,
+.discover-dream-places-section {
+  padding: 10px 40px;
+}
+
+.luxury-escape-section {
+  margin-bottom: -150px;
+}
+
+.discover-dream-holiday-section {
+  margin-bottom: -150px;
+}
+.luxury-escape-section h2,
+.discover-dream-holiday-section h2,
+.discover-dream-places-section h2 {
+  margin-bottom: 15px;
+  font-size: 24px;
+  color: #333;
+}
+
+.image-row,
+.dynamic-image-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.image-container {
+  position: relative;
+  flex: 1;
+  min-width: 200px;
+}
+
+.destination-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.category-button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #f0f0f0;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  font-size: 16px;
+}
+
+.category-button.active {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.category-button:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .category-button {
+    flex: 1 1 45%;
+    text-align: center;
+  }
+
+  .image-container {
+    min-width: 150px;
+  }
+
+  .image-label {
+    font-size: 12px;
+    padding: 4px 8px;
+  }
+}
+.affordable-holiday-deals-section {
+  padding: 20px 40px;
+  background-color: #f9f9f9;
+}
+
+.affordable-holiday-deals-section h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+  text-align: left;
+}
+
+.affordable-deals-row {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.affordable-deals-rectangle {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.first-rectangle {
+  flex: 2;
+  min-width: 300px;
+}
+
+.second-rectangle {
+  flex: 1;
+  min-width: 200px;
+}
+
+.affordable-deals-box {
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.deal-image-container {
+  position: relative;
+  width: 48%;
+  padding-top: 25%;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.deal-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures images fill the container while maintaining aspect ratio */
+  border-radius: 8px;
+}
+.deal-image-container1 {
+  position: relative;
+  width: 100%;
+  padding-top: 25%;
+  overflow: hidden;
+  border-radius: 8px;
+}
+.deal-image1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.deal-image-container2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-top: 25%;
+  overflow: hidden;
+  border-radius: 8px;
+}
+.deal-image2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.deal-label {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+@media (max-width: 1024px) {
+  .affordable-deals-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .first-rectangle,
+  .second-rectangle {
+    min-width: 100%;
+  }
+
+  .affordable-deals-box {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .deal-image-container {
+    width: 48%;
+  }
+}
+
+@media (max-width: 768px) {
+  .affordable-deals-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .affordable-deals-box {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .deal-image-container {
+    width: 100%;
+  }
+}
+.filter-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  width: 300px;
+}
+
+.range-display {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+

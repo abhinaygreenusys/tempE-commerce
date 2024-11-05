@@ -1,0 +1,203 @@
+.shipping-details-container {
+  background-color: rgb(240, 236, 236);
+}
+
+.subheader {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: #ccc;
+  margin-bottom: 20px;
+}
+
+.shipping-rectangles-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.shipping-rectangle {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 14px;
+  background-color: #f9f9f9;
+}
+
+.shipping-left-rectangle {
+  flex: 2;
+  margin-right: 10px;
+}
+
+.shipping-right-rectangle {
+  flex: 1;
+  margin-left: 10px;
+}
+
+.shipping-rectangle-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.shipping-address {
+  margin-top: 10px;
+}
+
+.address-dropdown {
+  width: 100%;
+  padding: 10px;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+.name-fields {
+  display: flex;
+  gap: 10px;
+}
+
+.name-input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+}
+
+.address-field, .name-fields, .address-fields, .city-fields, .contact-fields, .email-section, .save-info {
+  margin-bottom: 10px;
+}
+
+.address-input, .city-input, .contact-input, .email-input {
+  width: 97%;
+  padding: 10px;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+}
+
+.city-input {
+  flex: 1;
+}
+
+.contact-fields {
+  display: flex;
+  gap: 10px;
+}
+
+.email-input {
+  margin-bottom: 10px;
+}
+
+.save-info {
+  display: flex;
+  align-items: center;
+  gap: 1px;
+}
+
+.save-checkbox {
+  margin-right: 10px;
+}
+
+.order-summary-title {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.order-summary-line {
+  border-top: 1px solid #ddd;
+  margin-bottom: 20px;
+}
+
+.order-summary-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.order-summary-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Align items to space between */
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ddd; /* Removed this line if you want no border */
+  padding-bottom: 10px; /* Added padding for spacing */
+}
+
+.order-summary-item-content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.order-summary-image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.order-summary-details {
+  flex: 2;
+  text-align: left;
+}
+
+.product-title {
+  margin: 0;
+}
+
+.product-total {
+  margin: 5px 0;
+}
+
+.product-price {
+  text-align: right; /* Align price to the right */
+  width: 150px; /* Adjust width as needed */
+}
+
+.order-summary-subtotal-details {
+  margin-top: 20px;
+}
+
+.subtotal-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.total {
+  font-weight: bold;
+}
+
+.payment-methods {
+  margin-top: 20px;
+}
+
+.payment-method {
+  margin-bottom: 10px;
+}
+
+.payment-radio {
+  margin-right: 10px;
+}
+
+.continue-payment {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.continue-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.continue-button:hover {
+  background-color: #0056b3;
+}

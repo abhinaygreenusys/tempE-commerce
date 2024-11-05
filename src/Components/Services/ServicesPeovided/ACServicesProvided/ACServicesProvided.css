@@ -1,0 +1,116 @@
+.clothSewing{
+    background-color: #ccc;
+}
+.acServicesBody {
+    margin: 20px;
+    padding: 20px;
+  }
+  
+  .acServicesBodyMainBody {
+    display: flex;
+  }
+  
+  .sidebar {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .serviceItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  
+  .mainContent {
+    flex-grow: 1;
+    padding-left: 20px;
+  }
+  .acServiceBoxes {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.acServiceBox {
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #fffcfc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    background-color: white;
+}
+.acServiceImage{
+    height: 200px;
+    width: 190px;
+}
+.acServiceDetails {
+    margin-left: 10px;
+  }
+.verifiedIcon {
+    color: green;
+  }
+  
+  .rating, .acAddress {
+    font-size: 0.9rem;
+    margin-top: 5px;
+  }
+  
+  .acActionButtons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .connectButton, .bookButton {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  
+  .connectButton {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .bookButton {
+    background-color: #2196F3;
+    color: white;
+  }
+  .acSection {
+    margin-top: 20px;
+  }
+  
+  .acDryServices {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .laundryServiceBox {
+    display: flex;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .acServiceImage {
+    width: 100px;
+    height: auto;
+  }
+  
+  .serviceDetails {
+    padding: 10px; /* Space inside the box */
+    flex: 1; /* Take the rest of the space */
+  } 

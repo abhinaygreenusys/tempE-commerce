@@ -1,0 +1,179 @@
+.digital-showroom {
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .digital-header {
+    position: relative;
+  }
+  
+  .digital-header img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .header-text {
+    position: absolute;
+    top: 99%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(209, 207, 207);
+    text-align: center;
+    width: 90%;
+  }
+  
+  .header-text h1 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .browse-selection-box {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 15px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 10px;
+    width: 90%;
+  }
+  
+  .browse-selection-box h2 {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    color: black;
+    text-align: left;
+  }
+  
+  .vehicle-images {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .vehicle-item {
+    text-align: center;
+    margin: 10px;
+    flex: 1 1 150px;
+  }
+  
+  .vehicle-item img {
+    width: 80px;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px;
+  }
+  
+  .vehicle-item p {
+    margin: 0;
+    font-size: 0.9em;
+    color: black;
+  }
+  .topsell-bigdiscount {
+    padding: 20px;
+    background-color: #fff;
+    text-align: left;
+  }
+  
+  .topsell-bigdiscount h2 {
+    font-size: 28px;
+    margin-top: 200px;
+  }
+  
+  .discount-section {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  .discount-item {
+    background: #f0f0f0;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    width: 30%;
+    position: relative;
+  }
+  
+  .discount-item p {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .discount-item img {
+    max-width: 170px;
+    height: 200px;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .discount-item .circle {
+    position: absolute;
+    top: 50%;
+    right: -20px;
+    width: 40px;
+    height: 40px;
+    background: #000;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    cursor: pointer;
+  }
+  .just-for-you {
+    margin-top: 20px;
+    padding: 0 35px;
+    background-color: #c5c1c1;
+  }
+  
+  .just-for-you-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .just-for-you-title select {
+    padding: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .just-for-you-boxes {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .just-for-you-box {
+    background: #f8f8f8;
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    flex: 1;
+    margin-right: 10px;
+  }
+  
+.just-for-you-box:last-child {
+    margin-right: 0;
+  }
+.just-see-all-link {
+    text-align: center;
+    /* margin-top: 10px; */
+  }
+  
+.just-see-all-link button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    font-size: 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+.just-see-all-link button:hover {
+    background-color: #0056b3;
+  }
+  /* footer {
+    margin-top: 10px;
+  } */

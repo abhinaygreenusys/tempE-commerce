@@ -1,0 +1,70 @@
+.flightSidebar {
+    background-color: rgb(240, 238, 238);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    font-family: 'Rubik', sans-serif;
+  }
+  
+  .flightflightFilter-title {
+    font-size: 20px;
+    font-weight: 500;
+    color: #333333;
+    margin: 0;
+  }
+  
+  .separator {
+    border: none;
+    height: 1px;
+    background-color: #e0e0e0;
+    margin: 15px 0;
+  }
+  
+  .flightFilter-section {
+    margin-bottom: 20px;
+  }
+  
+  .flightFilter-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .flightFilter-header-title {
+    font-size: 16px;
+    font-weight: 500;
+    color: #555555;
+  }
+  
+  .clear-all {
+    font-size: 14px;
+    color: #007bff;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .clear-all:hover {
+    text-decoration: underline;
+  }
+  
+  .flightFilters-options {
+    margin-top: 10px;
+  }
+  
+  .flightFilter-item {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #333333;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  
+  .flightFilter-item input {
+    margin-right: 10px;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+  }
+  

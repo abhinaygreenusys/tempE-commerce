@@ -1,0 +1,345 @@
+.train-booking-page {
+    max-width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background-color: rgb(231, 231, 231);
+}
+
+.promotion-section {
+    background-color: blue;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+.promotion-section p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.image-section {
+    position: relative;
+    text-align: center;
+}
+
+.main-image {
+    width: 100%;
+    height: auto;
+}
+
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 150px;
+    height: auto;
+}
+
+.options-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    padding: 10px 20px;
+    background-color: rgb(240, 237, 237);
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(248, 247, 247, 0.911);
+    width: 40%;
+}
+
+.option {
+    padding: 10px 20px;
+    margin: 0 5px;
+    background-color: lightgray;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.option.active {
+    background-color: orange;
+    color: white;
+    border: 2px solid blue;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.journey-box {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Changed from center to flex-start */
+    z-index: 1;
+}
+
+.trip-type {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+}
+
+.trip-type label {
+    margin: 0 10px;
+    font-size: 1em;
+}
+
+.journey-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .journey-item {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    flex: 0 1 200px;
+    min-width: 200px;
+  }
+  .date-item {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #f9f9f9;
+  }
+  
+  .date-item input {
+    border: none;
+    background: transparent;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+  .date-item input[type="date"] {
+    cursor: pointer;
+  }
+
+.journey-item label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.journey-item input,
+.journey-item select {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.swap-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: #f0f0f0;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin: 0 10px;
+}
+
+.swap-icon:hover {
+    background-color: #e0e0e0;
+    transform: scale(1.05);
+}
+
+.swap-icon svg {
+    stroke: #333;
+}
+
+.suggestions {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ccc;
+    max-height: 100px;
+    overflow-y: auto;
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+}
+
+.suggestions li {
+    padding: 8px;
+    cursor: pointer;
+}
+
+.suggestions li:hover {
+    background-color: #f0f0f0;
+}
+
+.search-button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.search-button {
+    background-color: red;
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.search-button:hover {
+    background-color: darkred;
+}
+
+.train-details-page {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.train-details-page h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.search-summary {
+    background-color: #eef;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.search-summary p {
+    margin: 5px 0;
+    font-size: 1.1em;
+}
+.train-image-container {
+    position: relative;
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    background-color: #eef;
+  }
+  
+  .train-image {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    order: 2;
+  }
+  
+  .trainOverlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 90%;
+    background: linear-gradient(to left, rgba(144, 238, 144, 0.7), rgba(144, 238, 144, 0));
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding-right: 40px;
+    padding-top: 30px;
+    z-index: 1;
+  }
+  
+  .train-container {
+    text-align: right;
+    margin-top: 20px;
+  }
+  
+  .train-small-text {
+    font-size: 1em;
+    margin: 0;
+  }
+  
+  .train-large-text {
+    font-size: 1.5em;
+    margin: 0;
+    color: black;
+  }
+  
+  .icon-text-section {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 20px;
+  }
+  
+  .icon {
+    font-size: 2em;
+    margin-right: 10px;
+  }
+  
+  .text-container {
+    text-align: left;
+  }
+  
+  .icon-text-bold {
+    font-weight: bold;
+    margin-top: 40px;
+  }
+  
+  .icon-text {
+    margin: 0;
+    margin-top: 10px; /* Add a small gap between bold text and description */
+  }
+  
+  .gap {
+    height: 20px; /* Add gap between sections */
+  }
+  .train-small-text + .gap {
+    margin-top: 30px;
+  }
+  explore-button {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 20px;
+  }
+@media (max-width: 768px) {
+    .options-box {
+        width: 80%;
+        flex-direction: column;
+    }
+
+    .journey-box {
+        width: 90%;
+        top: 85%;
+    }
+
+    .journey-details {
+        flex-direction: column;
+    }
+
+    .journey-item {
+        flex: 1 1 100%;
+    }
+
+    .swap-icon {
+        margin: 10px 0;
+    }
+}
+@media (max-width: 768px) {
+    .journey-details {
+      flex-direction: column;
+    }
+  }
